@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+        Rock Paper Scissors?
+        <p class="info">First to 5 points wins!</p>
+        <p id = "update" class = "info"></p>
+    </header>
+    
+
+    <div class="board">
+      <div class="player">
+        <p class = "your-choice">YOU</p>
+        <img
+          src="images/girl.png"
+          alt="icon of black person with afro and rosy cheeks, and green shirt"
+          height="200"
+          width="200"
+        />
+        <div class="yourScore">SCORE:</div>
+      </div>
+      <div class="comp">
+        <p class = "comp-choice">COMPUTER</p>
+        <img
+          src="images/ux.png"
+          alt="icon of a computer"
+          height="200"
+          width="200"
+        />
+        <div class="compScore">SCORE:</div>
+      </div>
+    </div>
+
+    <div class="choices">
+      <p class="info">Pick one!</p>
+      <img
+        id="rock"
+        src="images/rocks.png"
+        alt="icon of a rock with some grass peeking through"
+        height="100"
+        width="100"
+      />
+      <img
+        id="paper"
+        src="images/paper.png"
+        alt="icon of three pieces of paper"
+        height="100"
+        width="100"
+      />
+      <img
+        id="scissors"
+        src="images/scissors.png"
+        alt="an icon of a blue pair of scissors"
+        height="100"
+        width="100"
+      />
+    </div>
+    <div class = "hidden">
+        <div class = "winningMessage"> I won!!! </div>
+        <button class = 'reset'>START OVER</button> 
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

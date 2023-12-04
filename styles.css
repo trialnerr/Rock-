@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html{
+    height: 100vh; 
+}
+body {
+  font-family: "Chakra Petch", sans-serif;
+  background: linear-gradient(#9ECEB8, #cbeed9);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  font-size: 80px;
+}
+
+p {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+}
+
+.board img{
+    height: 150px; 
+    width: 150px; 
+}
+  
+.info {
+  background-color: rgb(252, 224, 243);
+  border-radius: 5px;
+  font-size: 35px; 
+  margin-bottom: 10px;
+}
+
+.yourScore,
+.compScore {
+  background-color: aqua;
+  font-size: larger;
+  border: 5px double black;
+  padding: 10px 5px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* #rock:hover, #paper:hover, #scissors:hover { */
+.choices img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.choices img {
+  width: 150px; 
+  height: 150px; 
+  margin: 10px 30px;
+}
+
+.hidden{
+    background-color: rgb(56, 54, 54);
+    color: white; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    border: 5px solid black;
+    width: 25%; 
+    height: 25%; 
+    transform: translate(-50%,-50%); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;  
+    border-width: 0;
+    font-size: 35px; 
+    display: none; 
+}
+
+.reset{
+    padding: 10px 20px;
+    font-size: 35px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    border: 0; 
+}
