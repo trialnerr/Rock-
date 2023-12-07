@@ -11,7 +11,7 @@ html{
 }
 body {
   font-family: "Chakra Petch", sans-serif;
-  background: linear-gradient(#9ECEB8, #cbeed9);
+  background: #9ECEB8;;
   color: black;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,8 @@ body {
 }
 
 header {
-  font-size: 80px;
+  font-size: 85px;
+  
 }
 
 p {
@@ -39,20 +40,38 @@ p {
     height: 150px; 
     width: 150px; 
 }
+
+.your-choice, .comp-choice{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
   
 .info {
-  background-color: rgb(252, 224, 243);
+  background-color: #55D47B;
   border-radius: 5px;
   font-size: 35px; 
   margin-bottom: 10px;
 }
 
+.comp, .player{
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#update{
+  font-size: 20px; 
+  text-align: center;
+  background-color: #9ECEB8;
+}
+
 .yourScore,
 .compScore {
-  background-color: aqua;
+  background-color: rgb(203, 243, 203);
   font-size: larger;
   border: 5px double black;
-  padding: 10px 5px;
+  padding: 5px 10px;
   margin-top: 15px;
   font-weight: bold;
 }
@@ -68,6 +87,7 @@ p {
   height: 150px; 
   margin: 10px 30px;
 }
+
 
 .hidden{
     background-color: rgb(56, 54, 54);
