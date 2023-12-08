@@ -4,10 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 2px solid red;  */
   
 }
 html{
-    height: 100vh; 
+    min-height: 100vh; 
 }
 body {
   font-family: "Chakra Petch", sans-serif;
@@ -16,17 +17,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 header {
   font-size: 85px;
+  width: 80%; 
+  text-align: center;
   
 }
 
 p {
   font-size: 24px;
   text-align: center;
-  margin-top: 20px;
+  margin: 10px;
 }
 
 .board {
@@ -34,6 +38,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 250px;
+  width: 80%; 
 }
 
 .board img{
@@ -58,6 +63,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 20%; 
 }
 
 #update{
@@ -76,6 +82,10 @@ p {
   font-weight: bold;
 }
 
+.choices{
+  width: 60%; 
+  text-align: center;
+}
 /* #rock:hover, #paper:hover, #scissors:hover { */
 .choices img:hover {
   transform: scale(1.1);
